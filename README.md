@@ -174,3 +174,42 @@ using `cd Directory_1` first.
 - `find . -name` searches for files **by name**
 - `*` is a wildcard — `*.txt` means any file ending in .txt
 - Always check your current directory before running commands
+
+<img width="843" height="668" alt="image" src="https://github.com/user-attachments/assets/69df34b9-8396-498e-ae32-24254964c8d1" />
+<img width="844" height="667" alt="image" src="https://github.com/user-attachments/assets/dd109be7-0f18-4891-a71a-5522d63ce5f2" />
+<img width="852" height="271" alt="image" src="https://github.com/user-attachments/assets/4357259d-0d4b-46b8-b423-15f54aa46ff0" />
+
+## Viewing Files - cat, head, tail
+
+### File Used
+First edited `rocky.txt` using `vi` editor and added 11 lines of text.
+
+### Commands Practiced
+
+**cat - Print entire file contents**
+cat rocky.txt
+# Output: showed all 11 lines from hi to line 10 end ✅
+
+**head - Show first 10 lines**
+head rocky.txt
+# Output: showed first 9 lines (hi to line 9 focus) ✅
+
+**tail - Show last 10 lines**
+tail rocky.txt
+# Output: showed last 10 lines (line 1 welcome to line 10 end) ✅
+
+### Key Difference Between head and tail
+| Command | Shows |
+|---------|-------|
+| `cat` | All lines in the file |
+| `head` | First 10 lines only |
+| `tail` | Last 10 lines only |
+
+### What I Learned
+- `vi` can be used to edit existing files, not just create them
+- `cat` is best for small files to see all content at once
+- `head` is useful to quickly check the beginning of a file
+- `tail` is useful to check the most recent entries in log files
+- Linux is case sensitive — `Cat` failed but `cat` worked
+
+
