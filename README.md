@@ -131,3 +131,46 @@ whoami
 - `chmod -x` removes execute permission
 - `chown` requires real existing users on the system
 
+
+<img width="841" height="517" alt="image" src="https://github.com/user-attachments/assets/78cc58a7-6831-4248-83d9-424af6a2166a" />
+
+
+## Search Commands - grep, find
+
+### Commands Practiced
+
+**Search for text inside a file**
+grep "hi" rocky.txt
+# Output: hi ✅ (found the word "hi" in the file)
+
+**Search ignoring uppercase/lowercase**
+grep -i "HI" rocky.txt
+# Output: hi ✅ (found even though we searched in uppercase)
+
+**Find a specific file by name**
+find . -name "rocky.txt"
+# Output: ./rocky.txt ✅
+
+**Find all .txt files**
+find . -name "*.txt"
+# Output: ./rocky.txt ✅
+
+**Find all .sh files**
+find . -name "*.sh"
+# Output: nothing (no .sh files exist here)
+
+**Find all folders**
+find . -type d
+# Output: . (only current directory exists, no subfolders)
+
+### Error Encountered & Fixed
+grep "hi" rocky.txt failed first because I was in the 
+wrong directory (~). Fixed by navigating to Directory_1 
+using `cd Directory_1` first.
+
+### What I Learned
+- `grep` searches for text **inside** a file
+- `grep -i` makes the search **case insensitive**
+- `find . -name` searches for files **by name**
+- `*` is a wildcard — `*.txt` means any file ending in .txt
+- Always check your current directory before running commands
